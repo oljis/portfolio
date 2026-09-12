@@ -1,0 +1,410 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="theme-color" content="#0b1020" />
+
+  <title>Seydil — Étudiant en Informatique | Portfolio</title>
+
+  <meta name="description" content="Portfolio moderne de Seydil : développement web, réseaux et administration système." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <a class="skip-link" href="#main">Aller au contenu</a>
+
+  <!-- Background / ambient glows -->
+  <div class="bg" aria-hidden="true">
+    <span class="glow glow--1"></span>
+    <span class="glow glow--2"></span>
+    <span class="glow glow--3"></span>
+  </div>
+
+  <header class="site-header" role="banner">
+    <div class="container header-inner">
+      <a class="brand" href="#top" aria-label="Retour en haut de page">
+        <span class="brand__mark" aria-hidden="true">S</span>
+        <span class="brand__text">Seydil</span>
+      </a>
+
+      <nav class="nav" aria-label="Navigation principale">
+        <button class="nav__toggle" type="button" aria-expanded="false" aria-controls="navMenu">
+          <span class="sr-only">Ouvrir le menu</span>
+          <span class="hamburger" aria-hidden="true"></span>
+        </button>
+
+        <ul class="nav__list" id="navMenu">
+          <li><a class="nav__link" href="#projets">Mes Projets</a></li>
+          <li><a class="nav__link" href="#apropos">À propos</a></li>
+          <li><a class="nav__link" href="#competences">Compétences</a></li>
+          <li><a class="nav__link" href="#parcours">Parcours</a></li>
+          <li><a class="nav__link nav__link--cta" href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <!-- HERO -->
+    <section class="hero" id="top" aria-label="Présentation">
+      <div class="container hero-grid">
+        <div class="hero__left">
+          <div class="profile-wrap" aria-label="Photo de profil">
+            <!-- Mets ta vraie photo ici : assets/profile.jpg -->
+            <img
+              class="profile"
+              src="assets/img/img1.png"
+              alt="Photo de profil de Seydil"
+              width="200"
+              height="200"
+              loading="eager"
+            />
+          </div>
+
+          <h1 class="hero__title">Seydil, Étudiant en Informatique</h1>
+          <p class="hero__subtitle">
+            Je conçois des interfaces web modernes et je travaille aussi sur les réseaux et l’administration système.
+            Mon objectif : devenir un profil polyvalent, orienté solutions.
+          </p>
+
+          <div class="hero__actions" role="group" aria-label="Actions principales">
+            <a class="btn btn--primary" href="#projets">Mes Projets</a>
+            <a class="btn btn--ghost" href="#contact">Contact</a>
+          </div>
+
+          <div class="hero__badges" aria-label="Points forts">
+            <span class="pill">Glassmorphism</span>
+            <span class="pill">Web + Réseaux</span>
+            <span class="pill">IIS / Windows Server</span>
+          </div>
+        </div>
+
+        <aside class="hero__right" aria-label="Résumé">
+          <div class="glass card card--hero">
+            <h2 class="card__title">Ce que je fais</h2>
+            <ul class="list">
+              <li><span class="dot" aria-hidden="true"></span>Développement web (HTML5/CSS3, bases PHP)</li>
+              <li><span class="dot" aria-hidden="true"></span>Réseaux & administration système</li>
+              <li><span class="dot" aria-hidden="true"></span>Serveurs Windows : DNS, DHCP, IIS</li>
+              <li><span class="dot" aria-hidden="true"></span>Conception : UML / SQL Server</li>
+            </ul>
+
+            <div class="stats" aria-label="Aperçu">
+              <div class="stat">
+                <div class="stat__value">Startup</div>
+                <div class="stat__label">Design moderne</div>
+              </div>
+              <div class="stat">
+                <div class="stat__value">Pro</div>
+                <div class="stat__label">Portfolio</div>
+              </div>
+              <div class="stat">
+                <div class="stat__value">IIS</div>
+                <div class="stat__label">Prêt à déployer</div>
+              </div>
+            </div>
+          </div>
+
+          <div class="glass card card--timeline">
+            <div class="card__header">
+              <h3 class="card__title card__title--small">Focus du moment</h3>
+              <span class="chip">2026</span>
+            </div>
+            <p class="muted">
+              Finaliser des projets concrets, améliorer l’architecture et renforcer mes compétences backend.
+            </p>
+          </div>
+        </aside>
+      </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section class="section" id="apropos" aria-label="À propos">
+      <div class="container">
+        <div class="section__head">
+          <h2 class="section__title">À propos</h2>
+          <p class="section__desc">Une approche pratique : construire, tester, optimiser.</p>
+        </div>
+
+        <div class="grid-2">
+          <div class="glass card">
+            <h3 class="card__title">Qui est Seydil ?</h3>
+            <p class="muted">
+              Je suis un étudiant en informatique passionné par le développement web, les réseaux et l’administration système.
+              J’aime comprendre le “pourquoi” derrière chaque technologie et transformer les idées en réalisations.
+            </p>
+            <div class="divider"></div>
+            <div class="mini-kpis" aria-label="Objectifs">
+              <div class="mini-kpi">
+                <div class="mini-kpi__icon" aria-hidden="true">🚀</div>
+                <div>
+                  <div class="mini-kpi__title">Objectif</div>
+                  <div class="mini-kpi__text">Devenir efficace et fiable sur des systèmes réels</div>
+                </div>
+              </div>
+              <div class="mini-kpi">
+                <div class="mini-kpi__icon" aria-hidden="true">🧠</div>
+                <div>
+                  <div class="mini-kpi__title">Methode</div>
+                  <div class="mini-kpi__text">Clarté, structure, bonnes pratiques</div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="glass card">
+            <h3 class="card__title">Passions</h3>
+            <div class="tag-list" aria-label="Domaines">
+              <span class="tag">Développement Web</span>
+              <span class="tag">Réseaux Informatiques</span>
+              <span class="tag">Administration Système</span>
+              <span class="tag">Serveurs Windows</span>
+              <span class="tag">SQL Server</span>
+            </div>
+            <div class="divider"></div>
+            <p class="muted">
+              J’aime créer des pages propres et responsives, et j’apprécie aussi la partie infrastructure.
+              Mon but : relier interface et “back-end” pour proposer des solutions complètes.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SKILLS -->
+    <section class="section" id="competences" aria-label="Compétences">
+      <div class="container">
+        <div class="section__head">
+          <h2 class="section__title">Compétences</h2>
+          <p class="section__desc">Des bases solides et en progression continue.</p>
+        </div>
+
+        <div class="skills" role="list">
+          <article class="skill card" role="listitem">
+            <div class="skill__icon" aria-hidden="true">🧱</div>
+            <h3 class="skill__title">HTML5</h3>
+            <p class="skill__text muted">Structuration sémantique, accessibilité, mise en page moderne.</p>
+          </article>
+          <article class="skill card" role="listitem">
+            <div class="skill__icon" aria-hidden="true">🎨</div>
+            <h3 class="skill__title">CSS3</h3>
+            <p class="skill__text muted">Flexbox/Grid, animations CSS légères, UI glass.</p>
+          </article>
+          <article class="skill card" role="listitem">
+            <div class="skill__icon" aria-hidden="true">🐘</div>
+            <h3 class="skill__title">PHP</h3>
+            <p class="skill__text muted">Bases backend, logique applicative, intégration.</p>
+          </article>
+          <article class="skill card" role="listitem">
+            <div class="skill__icon" aria-hidden="true">☕</div>
+            <h3 class="skill__title">Java</h3>
+            <p class="skill__text muted">Programmation orientée objet, structuration de code.</p>
+          </article>
+          <article class="skill card" role="listitem">
+            <div class="skill__icon" aria-hidden="true">🗄️</div>
+            <h3 class="skill__title">SQL Server</h3>
+            <p class="skill__text muted">Requêtes, schémas, données et organisation.</p>
+          </article>
+          <article class="skill card" role="listitem">
+            <div class="skill__icon" aria-hidden="true">🪟</div>
+            <h3 class="skill__title">Windows Server</h3>
+            <p class="skill__text muted">Services, configuration et exploitation.</p>
+          </article>
+          <article class="skill card" role="listitem">
+            <div class="skill__icon" aria-hidden="true">🛰️</div>
+            <h3 class="skill__title">Réseaux Informatiques</h3>
+            <p class="skill__text muted">Compréhension IP, services réseau, troubleshooting.</p>
+          </article>
+          <article class="skill card" role="listitem">
+            <div class="skill__icon" aria-hidden="true">📐</div>
+            <h3 class="skill__title">UML</h3>
+            <p class="skill__text muted">Modélisation, conception et documentation.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- PROJECTS -->
+    <section class="section" id="projets" aria-label="Projets">
+      <div class="container">
+        <div class="section__head">
+          <h2 class="section__title">Projets</h2>
+          <p class="section__desc">Quelques réalisations et travaux structurants.</p>
+        </div>
+
+        <div class="projects" role="list">
+          <article class="project card" role="listitem">
+            <div class="project__top">
+              <span class="project__badge">Web</span>
+              <div class="project__icon" aria-hidden="true">🧭</div>
+            </div>
+            <h3 class="project__title">Lost &amp; Found Sénégal</h3>
+            <p class="project__text muted">
+              Plateforme de signalement et de recherche d’objets perdus/trouvés.
+              Organisation des données, pages responsives et parcours utilisateur.
+            </p>
+            <ul class="project__meta">
+              <li>UI moderne</li>
+              <li>Conception claire</li>
+              <li>Pages responsives</li>
+            </ul>
+          </article>
+
+          <article class="project card" role="listitem">
+            <div class="project__top">
+              <span class="project__badge">Application</span>
+              <div class="project__icon" aria-hidden="true">📚</div>
+            </div>
+            <h3 class="project__title">Gestion de bibliothèque</h3>
+            <p class="project__text muted">
+              Application de gestion : inventaire, catégories et suivi.
+              Modélisation avec UML et interactions données via SQL Server (selon configuration du projet).
+            </p>
+            <ul class="project__meta">
+              <li>Modélisation UML</li>
+              <li>Organisation SQL</li>
+              <li>Fonctionnalités métier</li>
+            </ul>
+          </article>
+
+          <article class="project card" role="listitem">
+            <div class="project__top">
+              <span class="project__badge">Réseau / Serveur</span>
+              <div class="project__icon" aria-hidden="true">🧩</div>
+            </div>
+            <h3 class="project__title">Projet Windows Server (DNS, DHCP, IIS)</h3>
+            <p class="project__text muted">
+              Mise en place d’une infrastructure réseau sur Windows Server :
+              configuration DNS, DHCP et déploiement d’IIS.
+              Objectif : disponibilité et performance.
+            </p>
+            <ul class="project__meta">
+              <li>DNS</li>
+              <li>DHCP</li>
+              <li>IIS</li>
+            </ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ACADEMIC -->
+    <section class="section" id="parcours" aria-label="Parcours académique">
+      <div class="container">
+        <div class="section__head">
+          <h2 class="section__title">Parcours académique</h2>
+          <p class="section__desc">Une trajectoire orientée informatique et projets.</p>
+        </div>
+
+        <div class="timeline" role="list">
+          <div class="timeline__item card glass" role="listitem">
+            <div class="timeline__dot" aria-hidden="true"></div>
+            <div>
+              <h3 class="card__title">Étudiant en informatique</h3>
+              <p class="muted">Apprentissage continu des technologies web, réseaux et systèmes.</p>
+            </div>
+          </div>
+
+          <div class="timeline__item card glass" role="listitem">
+            <div class="timeline__dot" aria-hidden="true"></div>
+            <div>
+              <h3 class="card__title">Formation universitaire</h3>
+              <p class="muted">Approche structurée : bases solides, pratique et compréhension des systèmes.</p>
+            </div>
+          </div>
+
+          <div class="timeline__item card glass" role="listitem">
+            <div class="timeline__dot" aria-hidden="true"></div>
+            <div>
+              <h3 class="card__title">Certifications / compétences acquises</h3>
+              <p class="muted">Projets liés à SQL Server, Windows Server, DNS/DHCP/IIS, conception UML et développement.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section class="section section--contact" id="contact" aria-label="Contact">
+      <div class="container">
+        <div class="section__head section__head--contact">
+          <h2 class="section__title">Contact</h2>
+          <p class="section__desc">Parlons de vos projets — je réponds avec sérieux et rapidité.</p>
+        </div>
+
+        <div class="grid-2 grid-2--contact">
+          <div class="glass card">
+            <h3 class="card__title">Coordonnées</h3>
+            <div class="contact-list" role="list">
+              <div class="contact-item" role="listitem">
+                <div class="contact-item__icon" aria-hidden="true">✉️</div>
+                <div>
+                  <div class="contact-item__label">Email</div>
+                  <a class="contact-item__value" href="mailto:seydil@example.com">seydil@example.com</a>
+                </div>
+              </div>
+
+              <div class="contact-item" role="listitem">
+                <div class="contact-item__icon" aria-hidden="true">📞</div>
+                <div>
+                  <div class="contact-item__label">Téléphone</div>
+                  <a class="contact-item__value" href="tel:+221700000000">+221 78 443 45 61</a>
+                </div>
+              </div>
+
+              <div class="contact-item" role="listitem">
+                <div class="contact-item__icon" aria-hidden="true">🔗</div>
+                <div>
+                  <div class="contact-item__label">LinkedIn</div>
+                  <a class="contact-item__value" href="#" target="_blank" rel="noopener">/in/seydil</a>
+                </div>
+              </div>
+
+              <div class="contact-item" role="listitem">
+                <div class="contact-item__icon" aria-hidden="true">🐙</div>
+                <div>
+                  <div class="contact-item__label">GitHub</div>
+                  <a class="contact-item__value" href="#" target="_blank" rel="noopener">github.com/seydil</a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="glass card">
+            <h3 class="card__title">Informations de domaine</h3>
+            <p class="muted">
+              Site : <strong>my221714.com</strong><br />
+              Alias DNS : <strong>ww6.my221714.com</strong>
+            </p>
+            <div class="divider"></div>
+            <p class="muted">
+              Déploiement sur IIS : copier <code>index.html</code> et <code>style.css</code> dans la racine du site.
+              Aucun JavaScript requis.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer" role="contentinfo">
+    <div class="container footer-inner">
+      <div class="footer__left">
+        <span class="footer__brand">Seydil</span>
+        <span class="footer__sep" aria-hidden="true">•</span>
+        <span class="footer__copy">© <span id="year">2026</span> Tous droits réservés.</span>
+      </div>
+      <div class="footer__right">
+        <a class="footer__link" href="#top">Haut de page</a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- No JS: year is fixed for IIS static hosting -->
+</body>
+</html>
+
